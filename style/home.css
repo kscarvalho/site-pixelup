@@ -1,0 +1,148 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 3000px;
+}
+
+.container-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px #e9ecef;
+}
+
+.menu{
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+li{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.container-submenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 47px;
+}
+
+.submenu{
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0px;
+}
+
+button {
+  font-size: 15px;
+  color: #fff;
+  background-color: #2d83ff;
+  border-color: #2d83ff;
+  border-radius: 999px;
+ border-style: solid;
+ border-width: 1px;
+ font-family: Arial;
+ padding: 7px 24px 8px;
+}
+
+.elemento-principal h1 {
+  margin: 0px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 114px;
+}
+
+strong{
+  margin-top: 20px;
+}
+
+h2{
+  margin: 0px;
+}
+
+.elemento-principal{
+  font-size: 30px;
+  height: 490px;
+  background: #90e0ef;
+}
+
+.input-email{
+  text-align: center;
+  padding-top: 71px;
+}
+
+.input-email input{
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 999px;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  height: 37px;
+  padding: 6px 50px 6px ;
+  width: 270px;
+}
+
+.input-email button{
+  color: rgb(0 0 0);
+  background: rgb(250 96 80);
+  font-size: 20px;
+  border-radius: 999px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial;
+  padding: 15px 30px 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.submenu-central{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 88px 0px 88px 0px;
+  gap: 80px;
+  margin: 0px;
+}
+
+.before::before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 35px;
+  background-color: #000;
+  margin-left: -50px;
+  margin-top: -7px;
+  align-content: center;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 464px;
+  padding-top: 164px;
+  background: #f2f2f2;
+}
+
+.container-grid{
+  font-size: 20px;
+  line-height: 48px;
+  text-shadow: #0000 0px 0px 0px;
+}
+
+.container-grid h1{
+  margin: 0px 0px 0px 140px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0px;
+}
+
