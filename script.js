@@ -17,6 +17,8 @@ function submitForm() {
     return;
   }
 
+  const passwordHash = CryptoJS.SHA256(password).toString();
+
   if (isLogin) {
     // Modo Login
     const storedUser = localStorage.getItem(username);
@@ -27,7 +29,7 @@ function submitForm() {
     }
 
     const user = JSON.parse(storedUser);
-    if (user.password === password) {
+    if (user.password === passwordHash) {
       message.style.color = "green";
       message.innerText = "Login realizado com sucesso!";
        window.location.href = "home.html";
@@ -44,7 +46,7 @@ function submitForm() {
 
     const newUser = {
       username,
-      password
+      password: passwordHash
     };
 
     localStorage.setItem(username, JSON.stringify(newUser));
