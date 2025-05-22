@@ -40,11 +40,51 @@ li{
 }
 
 .submenu{
+  position: relative;
   color: #212529;
   display: flex;
   gap: 40px;
   list-style-type: none;
   margin: 0px;
+  justify-self: center;
+}
+
+.submenu li::after{
+ position: absolute; 
+ content: "⮟"; 
+ align-items: center;
+ padding: 5px;
+ cursor: pointer;
+ bottom: 6px;
+ 
+}
+
+.submenu li.ativo::after {
+  content: '⮝';
+}
+
+.sublista{
+  display: none;
+  position: absolute;
+  margin-top: 42px;
+  width: 120px;
+  height: 150px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.ativo{
+  display: block;
+}
+
+.sublista li{
+  font-size: 12px;
+  list-style-type: none;
+}
+
+.sublista li::after {
+  display: none;
 }
 
 .container-submenu button {

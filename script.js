@@ -54,3 +54,35 @@ function submitForm() {
     message.innerText = "Cadastro realizado com sucesso!";
   }
 }
+
+const setaUp = document.querySelectorAll(".submenu li");
+
+
+setaUp.forEach((setaUp) => {
+setaUp.addEventListener("click", () => {
+setaUp.classList.toggle("ativo"); 
+  });
+});
+
+
+function initAccordion() { /*ESSA FUNÇÃO ISOLA O CÓDIGO DOSDEMAIS*/
+
+const setaUp = document.querySelector(".submenu li");
+const sublista = document.querySelector(".sublista");
+
+
+  setaUp.addEventListener("click", () => {
+  sublista.classList.toggle("ativo")
+  });
+
+  }
+initAccordion();
+
+
+
+ 
+
+
+
+
+
